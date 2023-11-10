@@ -1,0 +1,123 @@
+/* Подключение через файл */
+/* @import url("fonts.css"); */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:300,regular,500,600,700,800&display=swap");
+
+/* Почему reset.css не подключается самый первый до шрифтов? */
+@import url("reset.css");
+
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #7D7D7D;
+    line-height: 1.46;
+}
+
+.title,
+.sub-title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.27;
+    color: #37393F;
+}
+
+.title{
+    font-size: 30px;
+
+}
+
+.sub-title{
+    font-size: 20px;
+}
+
+.purple{
+    color: #6B77E5;
+}
+
+li{
+    font-weight: 500;
+    line-height: 2.46;
+}
+
+/* ==================== Часть вторая ===================== */
+
+.bbc{
+    background-color: #bd0018;
+}
+/* нужно вынести текст на бэкграунд под кнопку "Programmes" */
+.button{
+    color: #e9570a;
+}
+.button > a{
+    color: #40d5dc;
+    font-weight: 800;
+    font-size: 40px;
+    /* -webkit-text-stroke: 1px #37393F; */
+    /* Обводка текста */
+    text-shadow: 
+        -2px 0 #37393F,
+        2px 0 #37393F,
+        0 -2px #37393F,
+        0 2px #37393F;
+}
+/* нужно выстроить в ряд кнопки меню */
+.menu{
+    color: #f4eff3;
+    text-shadow: -2px 2px 3px #420fb2;
+    
+}
+.menu > .weird-yellow-text{
+    font-weight: 700;
+    font-size: 25px;
+    color: #faef07;
+    text-shadow: -5px 15px 2px #e3660a, 5px 30px 12px #360006;
+}
+h3{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #f6e6e7;
+}
+span{
+    font-style: oblique;
+    text-decoration: underline;
+}
+/* выставить блок с текстом справа от картинки */
+.main__text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #fdff94;
+    text-indent: 20px;
+    white-space: nowrap;
+}
+/* обращаемся ко всем тегам с атрибутом class, 
+в названии которых присутствует "-list" */
+[class*="-list"]{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-shadow: 4px 3px 4px #faef07, -5px 12px 8px #360006;
+    word-spacing: 2px;
+}
+.first-list{
+    color: #8eefcc;
+}
+.second-list{
+    color: #fdf100;
+}
+.third-list{
+    color: #0e08f2;
+}
+.fourth-list{
+    color: #ffa2ff;
+}
+.footer__navigation > li{
+    color: white;
+    text-transform: uppercase;
+    font-style: oblique;
+    text-align: center;
+    letter-spacing: 1px;
+    /* background-color: #070604; */
+    background:  radial-gradient(circle, #7b7d7c, #070604);
+}
