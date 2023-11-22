@@ -1,0 +1,334 @@
+/* Подключение через файл */
+/* @import url("fonts.css"); */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+
+@import url("reset.css");
+
+body{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #7D7D7D;
+}
+
+.header-container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.logo a{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #37393F;
+}
+.logo span{
+    color: #6B77E5;
+}
+.menu{
+    margin-top: -45px;
+    margin-left: 315px;
+}
+.menu li{
+    display: inline-block;
+    margin-left: 41px;
+    text-transform: capitalize;
+    color: #37393F;
+} 
+.button{
+    background-color: #6B77E5;
+    width: 184px;
+    height: 65px;
+    text-align: center;
+}
+.button a{
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 21px;
+}
+
+/* ===================  банер  ==================== */
+.banner__text-block {
+    width: 828px;
+    height: 458px;
+    margin-top: -458px;
+    padding: 142px 0 148px 173px;
+}
+.banner__text-block span{
+    font-weight: 600;
+    color: #fff;
+}
+.banner__text-block h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+}
+/* ================================== main =========================== */
+
+.container{
+    max-width: 692px;
+    margin: 0 auto 200px;
+}
+header {
+    margin-bottom: 150px;
+}
+.container > img{
+    margin-bottom: 37px;
+}
+.container h2{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.27;
+    color: #37393F;
+    text-transform: capitalize;
+    margin-bottom: 3px;
+}
+/* обращаюсь к тегу с классом article,
+который находится непосредственно даль по коду после h2 */
+h2 + .article {
+    margin-bottom: 42px;
+}
+.container h4{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.27;
+    color: #6B77E5;
+    margin-bottom: 12px;
+}
+h4 + .article {
+    margin-bottom: 40px;
+}
+
+/* ======================  benefits block  ==================== */
+
+/* Вариант 1 - для практики */
+/* .benefits .image {
+    max-width: 331px;
+}
+.benefits__list {
+    width: 332px;
+    margin-top: -305px;
+    margin-left: 360px;
+}
+.benefits__list h3{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.27;
+    color: #37393F;
+    margin-bottom: 15px;
+}
+.benefits__list h4{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.27;
+    color: #40DDB6;
+    margin-bottom: 21px;
+}
+.benefits__list .list{
+    padding-left: 35px;
+}
+.list li{
+    margin-bottom: 33px;
+} */
+
+/* Вариант 2 - рабочий */
+.benefits {
+    font-size: 0;
+}
+.benefits .image {
+    max-width: 331px;
+    display: inline-block;
+    margin-right: 29px;
+}
+.benefits__list {
+    width: 332px;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: top;
+}
+.benefits__list h3{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.27;
+    color: #37393F;
+    margin-bottom: 15px;
+}
+.benefits__list h4{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.27;
+    color: #40DDB6;
+    margin-bottom: 21px;
+}
+.list li{
+    margin-bottom: 33px;
+}
+
+/* ================  jewellery block  ================= */
+
+.jewellery-container{
+    background-color: #FFF9F4;
+}
+.content-conteiner{
+    max-width: 1171px;
+    margin: 0 auto;
+    padding: 140px 0;
+    font-size: 0;
+}
+/* Вариант 1 - для практики */
+/* .text-block{
+    max-width: 563px;
+    max-height: 476px;
+    padding-top: 21px;
+}
+.text-block h3{
+    font-size: 28px;
+    color: #D06B00;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+.text-block h2{
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-size: 59px;
+    color: #0E333D;
+    text-transform: capitalize;
+    line-height: 1.465;
+    margin-bottom: 25px;
+}
+.description p{
+    font-size: 20px;
+    color: #474747;
+    line-height: 1.8;
+}
+.image-block{
+    width: 568px;
+    margin-top: -476px;
+    margin-left: 601px;
+}
+.image-block .first-img{
+    margin-right: 22px;
+} */
+
+/* Вариант 2 - рабочий */
+.text-block{
+    max-width: 563px;
+    max-height: 476px;
+    padding-top: 21px;
+    display: inline-block;
+    margin-right: 38px;
+}
+.text-block h3{
+    font-size: 28px;
+    color: #D06B00;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+.text-block h2{
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-size: 59px;
+    color: #0E333D;
+    text-transform: capitalize;
+    line-height: 1.465;
+    margin-bottom: 25px;
+}
+.description p{
+    font-size: 20px;
+    color: #474747;
+    line-height: 1.8;
+}
+.image-block{
+    width: 568px;
+    display: inline-block;
+    vertical-align: top;
+}
+.image-block .first-img{
+    margin-right: 22px;
+}
+
+/* ================  Footer  =============== */
+
+/* DIV подтягивается за текстом,
+поэтому нужен снизу внутренний отступ до него*/
+.footer{
+    background-color: #f090fe;
+    padding: 300px 0 206px;
+}
+/* 
+  При изменении размеров экрана позиционирование меняется,
+  потому что img - это блочно-строчный объект
+  и когда достаточно месте, он выстаивается вряд
+  Поэтому всем дочерним IMG тега DIV 
+  назначу дисплей блок
+  (или можно каждый IMG дополнительно обернуть в DIV)
+*/
+.footer img{
+    display: block;
+}
+/* Вариант 2 */
+/* footer{
+    background-color: #f090fe;
+    padding-top: 300px;
+    padding-bottom: 671px;
+} */
+
+.lyrics{
+    margin-left: 300px;
+}
+.lyrics-2{
+    width: 400px;
+    margin-left: 500px;
+    margin-top: -75px;
+}
+.lyrics,
+.lyrics-2{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1.5;
+    /* вариант 1 */
+    /* text-shadow: 0 4px #fdef2e,
+    0 8px #f39205,
+    0 12px #dd5718,
+    0 16px #e6352d,
+    0 20px #662285,
+    0 24px #273574; */
+    /* вариант 2 */
+    color: #05644e;
+    text-shadow: 4px 4px white,
+    5px 5px #05644e,
+    3px 3px #05644e,
+    8px 8px white,
+    9px 9px #05644e,
+    7px 7px #05644e,
+    12px 12px white,
+    13px 13px #05644e,
+    11px 11px #05644e,
+    16px 16px white,
+    15px 15px #05644e,
+    17px 17px #05644e,
+    20px 20px white,
+    19px 19px #05644e,
+    21px 21px #05644e;
+}
+/* Появился отступ под стутуей....
+корректируем внутренним отступом от дива до бокала */
+.statue{
+    margin: -400px 0 0 100px;
+}
+.glass{
+    margin: -941px 0 0 136px;
+}
