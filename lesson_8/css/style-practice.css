@@ -1,0 +1,325 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body{
+    font-family: "Causten";
+    font-weight: 600;
+}
+
+.header__container,
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header__container{
+    min-height: 500px;
+    background: 
+        url("../img/fish.png") 1300px 5px / 200px no-repeat fixed,
+        /* при уменьшении ширины вьюпорта рыбка уезжает,
+        поэтому нужно зафиксировать красную линию тоже */
+        linear-gradient(0deg, rgba(236,32,31,1) 0%, rgba(236,32,31,1) 100%) 1325px 0 / 114px no-repeat fixed,
+        url("../img/wave.png");
+}
+
+.container {
+    padding: 50px 0;
+}
+.header__container{
+    padding-top: 200px;
+}
+.main-title{
+    font-size: 60px;
+    text-transform: capitalize;
+    color: #2b3af9
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2b3af9;
+    padding: 50px 0;
+}
+.header__container .title {
+    text-align: left;
+    padding-left: 100px;
+}
+
+.pentax .detail {
+    height: 800px;
+    margin-bottom: 20px;
+    background: url("../img/pentax-disassembled-1.jpg") center top/ 615px no-repeat fixed;
+} 
+.pentax .object {
+    min-height: 600px;
+    margin-bottom: 20px;
+    background: url("../img/pentax.png") center / 615px no-repeat fixed;
+}
+.pentax .disassembled {
+    height: 1200px;
+    margin-bottom: 20px;
+    background: url("../img/pentax-disassembled-2.jpg") center top / 615px no-repeat;
+}
+
+.telephone .detail {
+    height: 800px;
+    margin-bottom: 20px;
+    background: url("../img/telephone-disassembled-1.jpg") center / 615px no-repeat fixed;
+}
+.telephone .object {
+    min-height: 600px;
+    margin-bottom: 20px;
+    background: url("../img/telephone.png") center / 615px no-repeat fixed;
+}
+.telephone .disassembled {
+    height: 800px;
+    margin-bottom: 20px;
+    background: url("../img/telephone-disassembled-2.jpg") center / 615px no-repeat;
+}
+
+/* morocco sunset */
+.sunset{
+    height: 840px;
+    background: 
+        url("../img/sunset.png") center no-repeat,
+        url("../img/sun.png") 700px / 70px no-repeat fixed;
+    background-color: #fffddc;
+}
+.sunset .title{
+    color: #ff861d;
+    text-transform: uppercase;
+    font-size: 48px;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 100px;
+    width: 350px;
+}
+
+/* swimming in the sea */
+.boat{
+    min-height: 400px;
+    background: url("../img/boat.png"),
+        url("../img/sea.png") 670px fixed;
+
+}
+/* Big Brother */
+.peek {
+    height: 985px;
+    background: url("../img/peeking.png") 0 0 / 240px fixed;
+    background-color: #f5f5f5;
+}
+.peek .title{
+    padding: 400px;
+    font-size: 48px;
+    text-transform: inherit;
+}
+/* .head{
+    min-width: 516px;
+    min-height: 649px;
+    background: url("../img/head.png") 49px 241px;
+
+} */
+
+
+
+
+
+/* gradient */
+.gradient-block {
+    font-size: 0;
+    padding: 50px 0;
+}
+.gradient-block .title{
+    color: rgba(254,196,0,1);
+}
+.linear,
+.radial {
+    display: inline-block;
+    vertical-align: top;
+    width: 600px;
+    height: 360px;
+}
+.linear{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.close-up,
+.paper-block{
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 360px;
+}
+.paper{
+    display: inline-block;
+    width: 210px;
+    height: 297px;
+    margin: 31.5px 45px;
+    box-shadow: -15px 15px 30px rgba(0, 0, 0, 0.8);
+}
+
+.linear .close-up,
+.linear .paper{
+    /* background: linear-gradient(0deg, rgba(219,13,0,1) 0%, rgba(252,176,2,0.8) 50%, rgba(219,13,0,1) 100%); */
+    background: radial-gradient(circle, rgba(254,196,0,1) 0%, rgba(219,8,1,1) 80%);
+    /* background: linear-gradient(90deg, rgba(244,131,1,0.1) 0%, rgba(254,196,0,0.5) 50%, rgba(244,131,1,0.1) 100%); */
+    /* background-color: rgb(254,196,0,0.8); */
+    /* background-color: rgb(214, 43, 0); */
+    /* background-color: #eb9525; */
+}
+
+.linear .close-up{
+    box-shadow: inset -20px 0 40px rgb(217, 3, 1),
+    inset 20px 0 40px rgb(217, 3, 1);
+}
+
+.linear .paper-block,
+.box-1,
+.box-2{
+    background-color: rgb(217, 3, 1);
+    margin: 0 auto;
+}
+
+
+.close-up .box-1,
+.close-up .box-2{
+    width: 240px;
+    height: 60px;
+}
+.close-up .box-1{
+    margin-bottom: 240px;
+}
+.close-up .box-1{
+    box-shadow: 0 40px 50px #fec400;
+}
+.close-up .box-2{
+    box-shadow: 0 -40px 50px #fec400;
+}
+
+.paper .box-1,
+.paper .box-2{
+    /* outline: 1px solid #fea900; */
+    width: 120px;
+    height: 70px;
+}
+.paper .box-1{
+    margin-bottom: 157px;
+    box-shadow: 0 40px 50px #fec400;
+}
+.paper .box-2{
+    box-shadow: 0 -40px 50px #fec400;
+}
+
+
+
+.radial .close-up{
+    background-color: #fea900;
+    overflow: hidden;
+}
+.close-up .circle {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.close-up .circle.first{
+    margin-top: -90px;
+    
+}
+
+
+.radial .paper-block,
+.radial .paper {
+    background-color: #fea900;
+}
+.radial .paper{
+    padding: 18.5px 0;
+}
+.paper .circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.circle.first{
+    background: radial-gradient(circle at bottom, rgba(0,0,0,1) 15%, rgba(255,170,0,1) 80%, rgba(255,170,0,0) 100%);
+    box-shadow: 
+        inset -5px 10px 20px rgba(255, 170, 0, 0.5),
+        inset -5px 10px 20px rgba(255, 170, 0, 0.5);
+}
+.circle.second{
+    background: radial-gradient(circle at top, rgba(0,0,0,1) 15%, rgba(255,170,0,1) 80%, rgba(255,170,0,0) 100%);
+    box-shadow: 
+        inset 5px -10px 20px rgba(255, 170, 0, 0.5),
+        inset -5px -10px 20px rgba(255, 170, 0, 0.5);
+}
+
+.green-circle{
+    padding: 50px 0;
+}
+.green-circle .title{
+    text-align: left;
+}
+
+.cir-1, .cir-2, .cir-3, .cir-4, .cir-5, .cir-6, .cir-7{
+    border-radius: 50%;
+    display: inline-block;
+    padding: 55px 0 0 20px;
+    box-shadow: inset -5px 5px 5px rgba(0, 0, 0, 0.3),
+    /* inset 1px -1px 1px rgba(255, 255, 255, 0.35); */
+    inset 1px -1px 1px rgba(233, 247, 166, 0.4);
+}
+
+.cir-1 {
+    width: 570px;
+    height: 570px;
+    background-color: #d6e48f;
+}
+.cir-2 {
+    width: 500px;
+    height: 500px;
+    background-color: #aaca67;
+}
+.cir-3 {
+    width: 430px;
+    height: 430px;
+    background-color: #81b141;
+}
+.cir-4 {width: 360px;
+    height: 360px;
+    background-color: #6f9e40;
+}
+.cir-5 {
+    width: 290px;
+    height: 290px;
+    background-color: #5c8b3d;
+}
+.cir-6 {
+    width: 220px;
+    height: 220px;
+    background-color: #45662f;
+}
+.cir-7 {
+    width: 150px;
+    height: 150px;
+    background-color: #2e421f;
+}
+.cir-7 a{
+    display: inline-block;
+    padding: 6px 0 0 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #becda4;
+    /* vertical-align: bottom; */
+}
+.cir-7 span{
+    font-weight: 700;
+}
+.green-circle + .title{
+    color: #5c8b3d;
+}
+
