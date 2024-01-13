@@ -680,7 +680,7 @@ main [class*="-container"]{
 }
 
 [class*="game__line"]:hover{
-    cursor: url("../img/chromium_t-rex-error-offline.png"), auto;
+    cursor: url("../img/chromium_t-rex-error-offline.png") 10 10, auto;
 }
 
 .game__line-1 {
