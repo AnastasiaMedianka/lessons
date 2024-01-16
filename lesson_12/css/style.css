@@ -348,7 +348,7 @@ body{
 .page__container {
 }
 .page__body {
-    padding: 150px 0;
+    padding: 186px 0 150px;
     font-size: 0;
 }
 
