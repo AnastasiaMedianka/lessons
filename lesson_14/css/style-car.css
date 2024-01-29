@@ -56,8 +56,12 @@ body{
     animation: city 15s linear infinite;
 }
 @keyframes city{
-    form { background-position: 0 0;}
-    to { background-position: 100% 0;}
+    0% { 
+        background-position: 0 0;
+    }
+    100% { 
+        background-position: 100% 0;
+    }
 }
 
 /* .sun {
