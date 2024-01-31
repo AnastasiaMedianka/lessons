@@ -593,34 +593,16 @@ body{
   background-color: #f3f0df;
   animation: light-ball 12s infinite;
 }
-.lamp__light {
+.lamp__light{
   position: absolute;
   top: 56px;
-  left: 3px;
-  width: 98px;
-  height: 150px;
-  background-color: #fe2900;
+  left: -107px;
+	height: 0;
+	width: 318px;
+  border-bottom: 150px solid #fe2900;
+	border-left: 110px solid transparent;
+	border-right: 110px solid transparent;
   animation: light 12s infinite;
-}
-.lamp__light::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 1px;
-  transform: translate(-100%);
-  border-top: 150px solid transparent;
-  border-right: 110px solid #fe2900;
-  animation: lightbefore 12s infinite;
-}
-.lamp__light::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 1px;
-  transform: translate(100%);
-  border-top: 150px solid transparent;
-  border-left: 110px solid #fe2900;
-  animation: lightafter 12s infinite;
 }
 @keyframes light-ball{
   0%{
@@ -644,62 +626,22 @@ body{
 }
 @keyframes light{
   0%{
-    background-color: #fe2900;
+    border-bottom-color: #fe2900;
   }
   1%{
-    background-color: #f3f0df;
+    border-bottom-color: #f3f0df;
   }
   2%{
-    background-color: #fe2900;
+    border-bottom-color: #fe2900;
   }
   3%{
-    background-color: #f3f0df;
+    border-bottom-color: #f3f0df;
   }
   4%{
-    background-color: #fe2900;
+    border-bottom-color: #fe2900;
   }
   100%{
-    background-color: #fe2900;
-  }
-}
-@keyframes lightbefore{
-  0%{
-    border-right: 110px solid #fe2900;
-  }
-  1%{
-    border-right: 110px solid #f3f0df;
-  }
-  2%{
-    border-right: 110px solid #fe2900;
-  }
-  3%{
-    border-right: 110px solid #f3f0df;
-  }
-  4%{
-    border-right: 110px solid #fe2900;
-  }
-  100%{
-    border-right: 110px solid #fe2900;
-  }
-}
-@keyframes lightafter{
-  0%{
-    border-left: 110px solid #fe2900;
-  }
-  1%{
-    border-left: 110px solid #f3f0df;
-  }
-  2%{
-    border-left: 110px solid #fe2900;
-  }
-  3%{
-    border-left: 110px solid #f3f0df;
-  }
-  4%{
-    border-left: 110px solid #fe2900;
-  }
-  100%{
-    border-left: 110px solid #fe2900;
+    border-bottom-color: #fe2900;
   }
 }
 
