@@ -302,11 +302,10 @@ footer {
     font-size: 22px;
     font-weight: 700;
 }
-.wishlist__description a:not(:last-child),
 .wishlist__description p:not(:last-child){
     margin-bottom: 14px;
 }
-.wishlist__description:hover a {
+.wishlist__description p:first-child:hover a {
     text-decoration: underline;
 }
 .grey {
@@ -375,14 +374,14 @@ footer {
 .order__description p:not(:last-child){
     margin-bottom: 5px;
 }
-.order__description a{
+.order__description p:first-child{
     font-size: 16px;
+    margin-bottom: 10px;
 }
-.order__description:hover a {
+.order__description p:first-child:hover a {
     text-decoration: underline;
 }
 .order__description a:not(:last-child){
-    margin-bottom: 10px;
 }
 .order__description .grey{
     font-weight: 600;
