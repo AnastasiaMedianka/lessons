@@ -20,9 +20,8 @@ body{
 }
 
 .header__container,
-.page__container,
 footer {
-    max-width: 1470px;
+    max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -31,7 +30,6 @@ footer {
     margin-bottom: 100px;
 }
 .header__body {
-    max-width: 1230px;
     margin: 0 auto;
     padding: 34px 0 31px;
     display: flex;
