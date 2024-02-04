@@ -41,374 +41,372 @@
             </div>
         </header>
         <main class="page">
-            <div class="page__container">
-                <div class="info">
-                    <div class="info__container">
-                        <div class="info__title-block title-block">
-                            <h3 class="title-block__title">My Info</h3>
-                            <h4 class="title-block__sub-title">Add Address</h4>
-                        </div>
-                        <form class="info__form form" action="#" enctype="multipart/form-data">
-                            <div class="form__body">
-                                <div class="form__item">
-                                    <label class="form__label" for="name-01">First Name*</label>
-                                    <input id="name-01" class="form__input" type="text" name="name" placeholder="First Name" required>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="surname-01">Last Name*</label>
-                                    <input id="surname-01" class="form__input" type="text" name="surname" placeholder="Last Name" required>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="country-01">Country / Region*</label>
-                                    <input id="country-01" class="form__input" type="text" name="country" placeholder="Country / Region" required>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="company-01">Company Name</label>
-                                    <input id="company-01" class="form__input" type="text" name="company" placeholder="Company (optional)">
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="address-01">Street Address*</label>
-                                    <input id="address-01" class="form__input" type="text" name="address" placeholder="House number and street name" required>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="app-01">Apt, suite, unit</label>
-                                    <input id="app-01" class="form__input" type="text" name="appartmment" placeholder="Apartment, suite, unit, etc. (optional)">
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="city-01">City*</label>
-                                    <input id="city-01" class="form__input" type="text" name="city" placeholder="Town / City" required>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="state-01">State*</label>
-                                    <select class="form__select" name="state" id="state-01" required>
-                                        <option value disabled selected hidden>State</option>
-                                        <option value="AL">Alabama</option>
-                                        <option value="AK">Alaska</option>
-                                        <option value="AZ">Arizona</option>
-                                        <option value="AR">Arkansas</option>
-                                        <option value="CA">California</option>
-                                        <option value="CO">Colorado</option>
-                                        <option value="CT">Connecticut</option>
-                                        <option value="DE">Delaware</option>
-                                        <option value="FL">Florida</option>
-                                        <option value="GA">Georgia</option>
-                                        <option value="HI">Hawaii</option>
-                                        <option value="ID">Idaho</option>
-                                        <option value="IL">Illinois</option>
-                                        <option value="IN">Indiana</option>
-                                        <option value="IA">Iowa</option>
-                                        <option value="KS">Kansas</option>
-                                        <option value="KY">Kentucky</option>
-                                        <option value="LA">Louisiana</option>
-                                        <option value="ME">Maine</option>
-                                        <option value="MD">Maryland</option>
-                                        <option value="MA">Massachusetts</option>
-                                        <option value="MI">Michigan</option>
-                                        <option value="MN">Minnesota</option>
-                                        <option value="MS">Mississippi</option>
-                                        <option value="MO">Missouri</option>
-                                        <option value="MT">Montana</option>
-                                        <option value="NE">Nebraska</option>
-                                        <option value="NV">Nevada</option>
-                                        <option value="NH">New Hampshire</option>
-                                        <option value="NJ">New Jersey</option>
-                                        <option value="NM">New Mexico</option>
-                                        <option value="NY">New York</option>
-                                        <option value="NC">North Carolina</option>
-                                        <option value="ND">North Dakota</option>
-                                        <option value="OH">Ohio</option>
-                                        <option value="OK">Oklahoma</option>
-                                        <option value="OR">Oregon</option>
-                                        <option value="PA">Pennsylvania</option>
-                                        <option value="RI">Rhode Island</option>
-                                        <option value="SC">South Carolina</option>
-                                        <option value="SD">South Dakota</option>
-                                        <option value="TN">Tennessee</option>
-                                        <option value="TX">Texas</option>
-                                        <option value="UT">Utah</option>
-                                        <option value="VT">Vermont</option>
-                                        <option value="VA">Virginia</option>
-                                        <option value="WA">Washington</option>
-                                        <option value="WV">West Virginia</option>
-                                        <option value="WI">Wisconsin</option>
-                                        <option value="WY">Wyoming</option>
-                                    </select>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="phone-01">Phone*</label>
-                                    <input id="phone-01" class="form__input" type="tel" name="phone" placeholder="Phone" required>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="plz-01">Postal Code*</label>
-                                    <input id="plz-01" class="form__input" type="tel" name="plz" placeholder="Postal Code" required>
-                                </div>
-                                <div class="form__item form__item--textarea">
-                                    <label class="form__label" for="message-01">Delivery Instruction</label>
-                                    <textarea name="message" id="message-01" placeholder="Delivery Instruction"></textarea>
-                                </div>
-                                <div class="form__item form__item--checkbox">
-                                    <div class="form__checkbox checkbox">
-                                        <input class="checkbox__input" type="checkbox" name="shipping" id="shipping">
-                                        <label class="checkbox__label" for="shipping">Set as default shipping address</label>
-                                    </div>
-                                    <div class="form__checkbox checkbox">
-                                        <input class="checkbox__input" type="checkbox" name="billing" id="billing">
-                                        <label class="checkbox__label" for="billing">Set as default billing address</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info__btn">
-                                <button class="btn btn--save btn--primary">Save</button>
-                                <button class="btn btn--cancel btn--secondary">Cancel</button>
-                            </div>
-                        </form>
+            <div class="info">
+                <div class="info__container">
+                    <div class="info__title-block title-block">
+                        <h3 class="title-block__title">My Info</h3>
+                        <h4 class="title-block__sub-title">Add Address</h4>
                     </div>
-                </div>
-                <div class="checkout">
-                    <div class="checkout__container">
-                        <div class="checkout__title-block title-block">
-                            <h3 class="title-block__title">Check Out</h3>
-                            <h4 class="title-block__sub-title">Billing Details</h4>
-                        </div>
-                        <form class="checkout__form form" action="#" enctype="multipart/form-data">
-                            <div class="form__body">
-                                <div class="form__item">
-                                    <label class="form__label" for="name-02">First Name*</label>
-                                    <input id="name-02" class="form__input" type="text" name="name" placeholder="First Name" required>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="surname-02">Last Name*</label>
-                                    <input id="surname-02" class="form__input" type="text" name="surname" placeholder="Last Name" required>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="country-02">Country / Region*</label>
-                                    <input id="country-02" class="form__input" type="text" name="country" placeholder="Country / Region" required>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="company-02">Company Name</label>
-                                    <input id="company-02" class="form__input" type="text" name="company" placeholder="Company (optional)">
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="address-02">Street Address*</label>
-                                    <input id="address-02" class="form__input" type="text" name="address" placeholder="House number and street name" required>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="app-02">Apt, suite, unit</label>
-                                    <input id="app-02" class="form__input" type="text" name="appartmment" placeholder="Apartment, suite, unit, etc. (optional)">
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="city-02">City*</label>
-                                    <input id="city-02" class="form__input" type="text" name="city" placeholder="Town / City" required>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="state-02">State*</label>
-                                    <select class="form__select" name="state" id="state-02" required>
-                                        <option value disabled selected hidden>State</option>
-                                        <option value="AL">Alabama</option>
-                                        <option value="AK">Alaska</option>
-                                        <option value="AZ">Arizona</option>
-                                        <option value="AR">Arkansas</option>
-                                        <option value="CA">California</option>
-                                        <option value="CO">Colorado</option>
-                                        <option value="CT">Connecticut</option>
-                                        <option value="DE">Delaware</option>
-                                        <option value="FL">Florida</option>
-                                        <option value="GA">Georgia</option>
-                                        <option value="HI">Hawaii</option>
-                                        <option value="ID">Idaho</option>
-                                        <option value="IL">Illinois</option>
-                                        <option value="IN">Indiana</option>
-                                        <option value="IA">Iowa</option>
-                                        <option value="KS">Kansas</option>
-                                        <option value="KY">Kentucky</option>
-                                        <option value="LA">Louisiana</option>
-                                        <option value="ME">Maine</option>
-                                        <option value="MD">Maryland</option>
-                                        <option value="MA">Massachusetts</option>
-                                        <option value="MI">Michigan</option>
-                                        <option value="MN">Minnesota</option>
-                                        <option value="MS">Mississippi</option>
-                                        <option value="MO">Missouri</option>
-                                        <option value="MT">Montana</option>
-                                        <option value="NE">Nebraska</option>
-                                        <option value="NV">Nevada</option>
-                                        <option value="NH">New Hampshire</option>
-                                        <option value="NJ">New Jersey</option>
-                                        <option value="NM">New Mexico</option>
-                                        <option value="NY">New York</option>
-                                        <option value="NC">North Carolina</option>
-                                        <option value="ND">North Dakota</option>
-                                        <option value="OH">Ohio</option>
-                                        <option value="OK">Oklahoma</option>
-                                        <option value="OR">Oregon</option>
-                                        <option value="PA">Pennsylvania</option>
-                                        <option value="RI">Rhode Island</option>
-                                        <option value="SC">South Carolina</option>
-                                        <option value="SD">South Dakota</option>
-                                        <option value="TN">Tennessee</option>
-                                        <option value="TX">Texas</option>
-                                        <option value="UT">Utah</option>
-                                        <option value="VT">Vermont</option>
-                                        <option value="VA">Virginia</option>
-                                        <option value="WA">Washington</option>
-                                        <option value="WV">West Virginia</option>
-                                        <option value="WI">Wisconsin</option>
-                                        <option value="WY">Wyoming</option>
-                                    </select>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="plz-02">Postal Code*</label>
-                                    <input id="plz-02" class="form__input" type="tel" name="plz" placeholder="Postal Code" required>
-                                </div>
-                                <div class="form__item">
-                                    <label class="form__label" for="phone-02">Phone*</label>
-                                    <input id="phone-02" class="form__input" type="tel" name="phone" placeholder="Phone" required>
-                                </div>
+                    <form class="info__form form" action="#" enctype="multipart/form-data">
+                        <div class="form__body">
+                            <div class="form__item">
+                                <label class="form__label" for="name-01">First Name*</label>
+                                <input id="name-01" class="form__input" type="text" name="name" placeholder="First Name" required>
                             </div>
-                            <button class="btn btn--check btn--primary">Continue to delivery</button>
+                            <div class="form__item">
+                                <label class="form__label" for="surname-01">Last Name*</label>
+                                <input id="surname-01" class="form__input" type="text" name="surname" placeholder="Last Name" required>
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="country-01">Country / Region*</label>
+                                <input id="country-01" class="form__input" type="text" name="country" placeholder="Country / Region" required>
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="company-01">Company Name</label>
+                                <input id="company-01" class="form__input" type="text" name="company" placeholder="Company (optional)">
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="address-01">Street Address*</label>
+                                <input id="address-01" class="form__input" type="text" name="address" placeholder="House number and street name" required>
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="app-01">Apt, suite, unit</label>
+                                <input id="app-01" class="form__input" type="text" name="appartmment" placeholder="Apartment, suite, unit, etc. (optional)">
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="city-01">City*</label>
+                                <input id="city-01" class="form__input" type="text" name="city" placeholder="Town / City" required>
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="state-01">State*</label>
+                                <select class="form__select" name="state" id="state-01" required>
+                                    <option value disabled selected hidden>State</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="phone-01">Phone*</label>
+                                <input id="phone-01" class="form__input" type="tel" name="phone" placeholder="Phone" required>
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="plz-01">Postal Code*</label>
+                                <input id="plz-01" class="form__input" type="tel" name="plz" placeholder="Postal Code" required>
+                            </div>
+                            <div class="form__item form__item--textarea">
+                                <label class="form__label" for="message-01">Delivery Instruction</label>
+                                <textarea name="message" id="message-01" placeholder="Delivery Instruction"></textarea>
+                            </div>
                             <div class="form__item form__item--checkbox">
                                 <div class="form__checkbox checkbox">
-                                    <input class="checkbox__input" type="checkbox" name="checkout-info" id="checkout-info">
-                                    <label class="checkbox__label" for="checkout-info">Save my information for a faster checkout</label>
+                                    <input class="checkbox__input" type="checkbox" name="shipping" id="shipping">
+                                    <label class="checkbox__label" for="shipping">Set as default shipping address</label>
                                 </div>
-                            </div>
-                        </form>
-                        <form class="payment-form" action="#" enctype="multipart/form-data">
-                            <div class="payment-form__item">
-                                <div class="payment-form__header">
-                                    <h4 class="payment-form__title">Shipping Address</h4>
-                                    <p class="payment-form__text">Select the address that matches your card or payment method.</p>
+                                <div class="form__checkbox checkbox">
+                                    <input class="checkbox__input" type="checkbox" name="billing" id="billing">
+                                    <label class="checkbox__label" for="billing">Set as default billing address</label>
                                 </div>
-                                <div class="payment-form__body">
-                                    <fieldset class="payment-form__group">
-                                        <div class="payment-form__radio radio">
-                                            <input class="radio__input" checked type="radio" name="address" value="same" id="same">
-                                            <label class="radio__label" for="same">Same as Billing address</label>
-                                        </div>
-                                        <div class="payment-form__radio radio">
-                                            <input class="radio__input" type="radio" name="address" value="diff" id="different">
-                                            <label class="radio__label" for="different">Use a different shipping address</label>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                            </div>
-                            <div class="payment-form__item">
-                                <div class="payment-form__header">
-                                    <h4 class="payment-form__title">Shipping Method</h4>
-                                </div>
-                                <div class="payment-form__body">
-                                    <h5 class="payment-form__body-item payment-form__sub-title">Arrives by Monday, June 7</h5>
-                                    <div class="payment-form__body-item">
-                                        <div class="payment-form__title-group">
-                                            <h5 class="payment-form__sub-title">Delivery Charges</h5>
-                                            <h5 class="payment-form__sub-title payment-form__fee">$5.00</h5>
-                                        </div>
-                                        <p class="payment-form__text">Additional fees may apply</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="payment-form__item">
-                                <div class="payment-form__header">
-                                    <h4 class="payment-form__title">Payment Method</h4>
-                                    <p class="payment-form__text">All transactions are secure and encrypted.</p>
-                                </div>
-                                <div class="payment-form__body">
-                                    <div class="payment-form__method-item">
-                                        <fieldset class="payment-form__group">
-                                            <div class="payment-form__radio radio">
-                                                <input class="radio__input" checked type="radio" name="method" value="card" id="card">
-                                                <label class="radio__label" for="card">Credit Card 
-                                                    <span>We accept all major credit cards.</span>
-                                                </label>
-                                            </div>
-                                            <fieldset class="payment-form__card-list">
-                                                <div class="payment-form__card-item radio">
-                                                    <input class="radio__input method-input" type="radio" name="card-type" value="g-pay" id="g-pay">
-                                                    <label class="radio__label method-label" for="g-pay">
-                                                        <img src="img/googlePay.svg" alt="googlePay">
-                                                    </label>
-                                                </div>
-                                                <div class="payment-form__card-item radio">
-                                                    <input class="radio__input method-input" type="radio" name="card-type" value="visa" id="visa">
-                                                    <label class="radio__label method-label" for="visa">
-                                                        <img src="img/visa.svg" alt="VISA">
-                                                    </label>
-                                                </div>
-                                                <div class="payment-form__card-item radio">
-                                                    <input class="radio__input method-input" type="radio" name="card-type" value="paypal" id="paypal">
-                                                    <label class="radio__label method-label" for="paypal">
-                                                        <img src="img/paypal.svg" alt="PayPal">
-                                                    </label>
-                                                </div>
-                                                <div class="payment-form__card-item radio">
-                                                    <input class="radio__input method-input" type="radio" name="card-type" value="paypass" id="paypass">
-                                                    <label class="radio__label method-label" for="paypass">
-                                                        <img src="img/paypass.svg" alt="paypass">
-                                                    </label>
-                                                </div>
-                                            </fieldset>
-                                            <fieldset class="card-details">
-                                                <div class="card-details__item form">
-                                                    <input class="form__input" type="tel" minlength="15" maxlength="16" name="number" placeholder="Card number" required>
-                                                </div>
-                                                <div class="card-details__item form">
-                                                    <input class="form__input" type="text" name="card-name" placeholder="Name of card" required>
-                                                </div>
-                                                <div class="card-details__item form">
-                                                    <input class="form__input" type="tel" minlength="4" maxlength="4" name="date" placeholder="Expiration date (MM/YY)" required>
-                                                </div>
-                                                <div class="card-details__item form">
-                                                    <input class="form__input" type="tel" minlength="3" maxlength="3" name="svv" placeholder="Security Code" required>
-                                                </div>
-                                            </fieldset>
-                                        </fieldset>
-                                    </div>
-                                    <div class="payment-form__method-item">
-                                        <div class="payment-form__radio radio">
-                                            <input class="radio__input" type="radio" name="method" value="cash" id="cash">
-                                            <label class="radio__label" for="cash">Cash on delivery 
-                                                <span>Pay with cash upon delivery.</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="payment-form__method-item">
-                                        <div class="payment-form__radio radio">
-                                            <input class="radio__input" type="radio" name="method" value="pp" id="paypal-method">
-                                            <label class="radio__label" for="paypal-method">Paypal</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="btn btn--primary btn--check">Pay Now</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="consulting">
-                    <div class="consulting__title-block">
-                        <h6 class="consulting__sub-title">Contact Us</h6>
-                        <h2 class="consulting__title">Request A Call Back !</h2>
-                    </div>
-                    <form class="consulting__form contact-us-form" action="#" enctype="multipart/form-data">
-                        <div class="contact-us-form__body">
-                            <div class="contact-us-form__item">
-                                <input class="contact-us-form__input" type="text" name="name" placeholder="Your Name" required tabindex="1">
-                            </div>
-                            <div class="contact-us-form__item">
-                                <input class="contact-us-form__input" type="tel" name="phone" placeholder="Phone Number" required tabindex="3">
-                            </div>
-                            <div class="contact-us-form__item">
-                                <input class="contact-us-form__input" type="email" name="mail" placeholder="Email Address" required tabindex="2">
-                            </div>
-                            <div class="contact-us-form__item">
-                                <input class="contact-us-form__input" type="text" name="subject" placeholder="Subject" required tabindex="4">
-                            </div>
-                            <div class="contact-us-form__item">
-                                <textarea class="contact-us-form__textarea" name="message" placeholder="Message..." tabindex="5"></textarea>
                             </div>
                         </div>
-                        <button class="btn btn--submit">Submit</button>
+                        <div class="info__btn">
+                            <button class="btn btn--save btn--primary">Save</button>
+                            <button class="btn btn--cancel btn--secondary">Cancel</button>
+                        </div>
                     </form>
                 </div>
+            </div>
+            <div class="checkout">
+                <div class="checkout__container">
+                    <div class="checkout__title-block title-block">
+                        <h3 class="title-block__title">Check Out</h3>
+                        <h4 class="title-block__sub-title">Billing Details</h4>
+                    </div>
+                    <form class="checkout__form form" action="#" enctype="multipart/form-data">
+                        <div class="form__body">
+                            <div class="form__item">
+                                <label class="form__label" for="name-02">First Name*</label>
+                                <input id="name-02" class="form__input" type="text" name="name" placeholder="First Name" required>
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="surname-02">Last Name*</label>
+                                <input id="surname-02" class="form__input" type="text" name="surname" placeholder="Last Name" required>
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="country-02">Country / Region*</label>
+                                <input id="country-02" class="form__input" type="text" name="country" placeholder="Country / Region" required>
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="company-02">Company Name</label>
+                                <input id="company-02" class="form__input" type="text" name="company" placeholder="Company (optional)">
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="address-02">Street Address*</label>
+                                <input id="address-02" class="form__input" type="text" name="address" placeholder="House number and street name" required>
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="app-02">Apt, suite, unit</label>
+                                <input id="app-02" class="form__input" type="text" name="appartmment" placeholder="Apartment, suite, unit, etc. (optional)">
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="city-02">City*</label>
+                                <input id="city-02" class="form__input" type="text" name="city" placeholder="Town / City" required>
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="state-02">State*</label>
+                                <select class="form__select" name="state" id="state-02" required>
+                                    <option value disabled selected hidden>State</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="plz-02">Postal Code*</label>
+                                <input id="plz-02" class="form__input" type="tel" name="plz" placeholder="Postal Code" required>
+                            </div>
+                            <div class="form__item">
+                                <label class="form__label" for="phone-02">Phone*</label>
+                                <input id="phone-02" class="form__input" type="tel" name="phone" placeholder="Phone" required>
+                            </div>
+                        </div>
+                        <button class="btn btn--check btn--primary">Continue to delivery</button>
+                        <div class="form__item form__item--checkbox">
+                            <div class="form__checkbox checkbox">
+                                <input class="checkbox__input" type="checkbox" name="checkout-info" id="checkout-info">
+                                <label class="checkbox__label" for="checkout-info">Save my information for a faster checkout</label>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="payment-form" action="#" enctype="multipart/form-data">
+                        <div class="payment-form__item">
+                            <div class="payment-form__header">
+                                <h4 class="payment-form__title">Shipping Address</h4>
+                                <p class="payment-form__text">Select the address that matches your card or payment method.</p>
+                            </div>
+                            <div class="payment-form__body">
+                                <fieldset class="payment-form__group">
+                                    <div class="payment-form__radio radio">
+                                        <input class="radio__input" checked type="radio" name="address" value="same" id="same">
+                                        <label class="radio__label" for="same">Same as Billing address</label>
+                                    </div>
+                                    <div class="payment-form__radio radio">
+                                        <input class="radio__input" type="radio" name="address" value="diff" id="different">
+                                        <label class="radio__label" for="different">Use a different shipping address</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="payment-form__item">
+                            <div class="payment-form__header">
+                                <h4 class="payment-form__title">Shipping Method</h4>
+                            </div>
+                            <div class="payment-form__body">
+                                <h5 class="payment-form__body-item payment-form__sub-title">Arrives by Monday, June 7</h5>
+                                <div class="payment-form__body-item">
+                                    <div class="payment-form__title-group">
+                                        <h5 class="payment-form__sub-title">Delivery Charges</h5>
+                                        <h5 class="payment-form__sub-title payment-form__fee">$5.00</h5>
+                                    </div>
+                                    <p class="payment-form__text">Additional fees may apply</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-form__item">
+                            <div class="payment-form__header">
+                                <h4 class="payment-form__title">Payment Method</h4>
+                                <p class="payment-form__text">All transactions are secure and encrypted.</p>
+                            </div>
+                            <div class="payment-form__body">
+                                <div class="payment-form__method-item">
+                                    <fieldset class="payment-form__group">
+                                        <div class="payment-form__radio radio">
+                                            <input class="radio__input" checked type="radio" name="method" value="card" id="card">
+                                            <label class="radio__label" for="card">Credit Card 
+                                                <span>We accept all major credit cards.</span>
+                                            </label>
+                                        </div>
+                                        <fieldset class="payment-form__card-list">
+                                            <div class="payment-form__card-item radio">
+                                                <input class="radio__input method-input" type="radio" name="card-type" value="g-pay" id="g-pay">
+                                                <label class="radio__label method-label" for="g-pay">
+                                                    <img src="img/googlePay.svg" alt="googlePay">
+                                                </label>
+                                            </div>
+                                            <div class="payment-form__card-item radio">
+                                                <input class="radio__input method-input" type="radio" name="card-type" value="visa" id="visa">
+                                                <label class="radio__label method-label" for="visa">
+                                                    <img src="img/visa.svg" alt="VISA">
+                                                </label>
+                                            </div>
+                                            <div class="payment-form__card-item radio">
+                                                <input class="radio__input method-input" type="radio" name="card-type" value="paypal" id="paypal">
+                                                <label class="radio__label method-label" for="paypal">
+                                                    <img src="img/paypal.svg" alt="PayPal">
+                                                </label>
+                                            </div>
+                                            <div class="payment-form__card-item radio">
+                                                <input class="radio__input method-input" type="radio" name="card-type" value="paypass" id="paypass">
+                                                <label class="radio__label method-label" for="paypass">
+                                                    <img src="img/paypass.svg" alt="paypass">
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="card-details">
+                                            <div class="card-details__item form">
+                                                <input class="form__input" type="tel" minlength="15" maxlength="16" name="number" placeholder="Card number" required>
+                                            </div>
+                                            <div class="card-details__item form">
+                                                <input class="form__input" type="text" name="card-name" placeholder="Name of card" required>
+                                            </div>
+                                            <div class="card-details__item form">
+                                                <input class="form__input" type="tel" minlength="4" maxlength="4" name="date" placeholder="Expiration date (MM/YY)" required>
+                                            </div>
+                                            <div class="card-details__item form">
+                                                <input class="form__input" type="tel" minlength="3" maxlength="3" name="svv" placeholder="Security Code" required>
+                                            </div>
+                                        </fieldset>
+                                    </fieldset>
+                                </div>
+                                <div class="payment-form__method-item">
+                                    <div class="payment-form__radio radio">
+                                        <input class="radio__input" type="radio" name="method" value="cash" id="cash">
+                                        <label class="radio__label" for="cash">Cash on delivery 
+                                            <span>Pay with cash upon delivery.</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="payment-form__method-item">
+                                    <div class="payment-form__radio radio">
+                                        <input class="radio__input" type="radio" name="method" value="pp" id="paypal-method">
+                                        <label class="radio__label" for="paypal-method">Paypal</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn--primary btn--check">Pay Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="consulting">
+                <div class="consulting__title-block">
+                    <h6 class="consulting__sub-title">Contact Us</h6>
+                    <h2 class="consulting__title">Request A Call Back !</h2>
+                </div>
+                <form class="consulting__form contact-us-form" action="#" enctype="multipart/form-data">
+                    <div class="contact-us-form__body">
+                        <div class="contact-us-form__item">
+                            <input class="contact-us-form__input" type="text" name="name" placeholder="Your Name" required tabindex="1">
+                        </div>
+                        <div class="contact-us-form__item">
+                            <input class="contact-us-form__input" type="tel" name="phone" placeholder="Phone Number" required tabindex="3">
+                        </div>
+                        <div class="contact-us-form__item">
+                            <input class="contact-us-form__input" type="email" name="mail" placeholder="Email Address" required tabindex="2">
+                        </div>
+                        <div class="contact-us-form__item">
+                            <input class="contact-us-form__input" type="text" name="subject" placeholder="Subject" required tabindex="4">
+                        </div>
+                        <div class="contact-us-form__item">
+                            <textarea class="contact-us-form__textarea" name="message" placeholder="Message..." tabindex="5"></textarea>
+                        </div>
+                    </div>
+                    <button class="btn btn--submit">Submit</button>
+                </form>
             </div>
         </main>
         <footer class="footer">
