@@ -449,8 +449,8 @@ footer {
     padding: 0 27px;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 30px;
-    column-gap: 28px;
+    row-gap: 28px;
+    column-gap: 30px;
 }
 .card-details__item {
     flex: 0 1 337px;
