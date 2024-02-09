@@ -1,0 +1,279 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3C4242;
+}
+.wrapper{
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper > main{
+    flex-grow: 1;
+}
+[class*="__container"]{
+    padding: 100px 15px;
+    padding: clamp(25px, 11%, 100px) 15px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #FEFAF4;
+}
+.text {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header .text {
+    padding-top: 50px;
+    max-width: 1200px;
+    font-family: "DM Serif Text", serif;
+    font-size: min(48px, calc(24px + 24 * (100vw / 1200)));
+    font-weight: 400;
+    line-height: 1.2;
+
+}
+/* ====================  section 1  ===================== */
+
+.section-1 {
+    background:
+    url("../img/decor.webp") bottom right no-repeat,
+    #FEFAF4;
+}
+.section-1__container {
+    max-width: 1197px;
+    padding: clamp(25px, 9%, 125px) 15px;
+}
+.title {
+    font-family: "DM Serif Text", serif;
+    font-size: min(58px, calc(24px + 34 * (100vw / 1204)));
+    font-weight: 400;
+    margin-bottom: min(27px, 3%);
+}
+.section-1__title {
+    color: #000;
+    font-size: min(58px, calc(24px + 34 * (100vw / 1197)));
+}
+.section-1__sub-title {
+    font-size: min(20px, calc(16px + 4 * (100vw / 1197)));
+    line-height: 1.8;
+    color: #606060;
+    margin-bottom: 53px;
+    margin-bottom: min(53px, 6%);
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin: 0 min(-15px, -1.3%);
+}
+.products__item{
+    min-height: 100%;
+    padding: 0 min(15px, 1.3%);
+    display: flex;
+    flex-direction: column;
+}
+.section-1 .products__item{
+    flex: 1 0 33.33%;
+}
+.products__link--image{
+    width: 100%;
+    margin-bottom: 17px;
+}
+.section-1 .products__link--image{
+    margin-bottom: 16px;
+}
+.products__image{
+    width: 100%;
+    height: 100%;
+    /* contain потому что товар */
+    object-fit: contain;
+}
+.section-1__container .products__image{
+    aspect-ratio: 357 / 240;
+}
+.section-1 .products__title {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-size: min(24px, calc(20px + 4 * (100vw / 1197)));
+    line-height: 1.288;
+    color: #000;
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+.products__text-item {
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+.products__links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    line-height: 1.24;
+    color: #F55529;
+}
+.products__links .products__link:first-child{
+    flex-grow: 1;
+}
+.products__links .products__link:last-child{
+    flex: 0 0 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #F55529;
+    display: flex;
+}
+.products__links .products__link:last-child img{
+    margin: auto;
+}
+/* ====================  section 2  ===================== */
+
+.section-2 {
+    font-family: "Cormorant Infant", serif;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+}
+.section-2__container {
+    max-width: 1204px;
+}
+.section-2__title {
+    color: #291403;
+}
+.section-2__sub-title {
+    font-size: min(30px, calc(20px + 10 * (100vw / 1204)));
+    color: #818181;
+    margin-bottom: min(62px, 6%);
+}
+.section-2__products {
+    margin-bottom: min(76px, 12%);
+}
+.section-2__products .products__item {
+    flex: 0 1 25%;
+}
+.section-2__products .products__image{
+    aspect-ratio: 271 / 270;
+}
+.products__title {
+    font-size: min(24px, calc(20px + 4 * (100vw / 1204)));
+    color: #000;
+    text-align: left;
+}
+.section-2__button {
+    padding: 12px 43px;
+    background-color: #FF7A49;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
+}
+/* ====================  section 3  ===================== */
+
+.section-3 {
+    background-color: #0E333D;
+    color: white;
+    text-align: center;
+}
+.section-3__container {
+    max-width: 1204px;
+}
+.title--white {
+    font-size: 48px;
+    font-size: min(48px, calc(24px + 24 * (100vw / 1204)));
+    line-height: 1.27;
+    color: white;
+    margin-bottom: 23px;
+}
+.section-3__sub-title,
+.section-3__list{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.27;
+}
+.section-3__sub-title {
+    color: #EBEBEB;
+    margin-bottom: min(34px, 3%);
+}
+.section-3__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: min(41px, 4%);
+    gap: clamp(14px, 4%, 41px);
+    justify-content: center;
+    margin-bottom: min(77px, 12%);
+}
+.section-3__products .products__item {
+    flex: 0 1 25%;
+}
+.section-3 .products__image {
+    aspect-ratio: 271 / 270;
+    border-radius: 5px;
+}
+.products__title--white {
+    font-family: "Cormorant Infant", serif;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #fff;
+}
+@media (max-width: 1350px) {
+    .section-1{
+        background: #FEFAF4;
+    }
+}
+@media (max-width: 900px) {
+    .section-2 .products__item,
+    .section-3 .products__item {
+        flex: 0 0 33.33%;
+    }
+}
+@media (max-width: 720px) {
+    .section-1 .products__item,
+    .section-2 .products__item,
+    .section-3 .products__item {
+        flex: 0 0 50%;
+    }
+    .section-1__title{
+        font-size: clamp(24px, calc(24px + (34 + 34 * 0.7) * ((100vw - 320px) / 1197)), 58px);
+    } 
+    .section-1__sub-title{
+        font-size: clamp(16px, calc(16px + (4 + 4 * 0.7) * ((100vw - 320px) / 1197)), 20px);
+    }
+    .section-1 .products__title{
+        font-size: clamp(20px, calc(20px + (4 + 4 * 0.7) * ((100vw - 320px) / 1197)), 24px);
+    }
+    
+    .title{
+        font-size: clamp(24px, calc(24px + (34 + 34 * 0.7) * ((100vw - 320px) / 1204)), 58px);
+    }
+    .title--white{
+        font-size: clamp(24px, calc(24px + (24 + 24 * 0.7) * ((100vw - 320px) / 1204)), 48px);
+    }
+    .section-2__sub-title{
+        font-size: clamp(20px, calc(20px + (10 + 10 * 0.7) * ((100vw - 320px) / 1204)), 30px);
+    }
+    .section-2 .products__title{
+        font-size: clamp(20px, calc(20px + (4 + 4 * 0.7) * ((100vw - 320px) / 1204)), 24px);
+    }
+}
+@media (max-width: 500px) {
+    .section-1 .products__item,
+    .section-2 .products__item,
+    .section-3 .products__item {
+        flex: 1 0 100%;
+    }
+}
+/* ====================  footer  ===================== */
+ 
+.footer .text {
+    background-color: #0E333D;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
