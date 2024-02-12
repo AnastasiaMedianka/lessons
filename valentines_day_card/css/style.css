@@ -11,7 +11,7 @@ body{
     /* letter-spacing: -1.5px; */
     letter-spacing: -1px;
     font-weight: 400;
-    font-size: 24px;
+    font-size: min(24px, calc(16px + 8 * (100vw / 800)));
     color: #3C4242;
     background-color: #ffeef7;
     /* background-color: #fee9e8; */
@@ -34,8 +34,8 @@ body{
     justify-content: center;
 }
 .envelope {
-    width: 530px;
-    height: 310px;
+    width: 500px;
+    height: 280px;
     background-color: #fd9ed0;
     margin-bottom: 30px;
     position: relative;
@@ -49,18 +49,44 @@ body{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    width: 500px;
-    height: 280px;
+    width: 470px;
+    height: 250px;
     background-color: #fff;
     border-radius: 15px;
-    /* display: none; */
     transition: transform 0.3s ease-in;
     z-index: 2;
 }
-.envelope:hover .letter{
-    transition: transform 0.3s ease-in-out 0.3s;
-    transform: translateY(-90%);
-
+@media (any-hover: hover) {
+    .envelope:hover .letter{
+        transition: transform 0.3s ease-in-out 0.3s;
+        transform: translateY(-90%);
+    }
+}
+@media (any-hover: none){
+    .letter {
+        transition: none;
+        animation: letter 5s ease-in-out 2s;
+    }  
+    @keyframes letter {
+        0%{
+            transform: translateY(0);
+        }
+        6%{
+            transform: translateY(0);
+        }
+        12%{
+            transform: translateY(-90%);
+        }
+        86%{
+            transform: translateY(-90%);
+        }
+        92%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
 }
 .text{
     padding-top: 20px;
@@ -77,9 +103,9 @@ body{
     left: 0;
     width: 0;
 	height: 0;
-	border-top: 155px solid transparent;
-	border-left: 266px solid #fdd2e8;
-	border-bottom: 155px solid transparent;
+	border-top: 140px solid transparent;
+	border-left: 251px solid #fdd2e8;
+	border-bottom: 140px solid transparent;
     z-index: 3;
 }
 .envelope__right {
@@ -88,20 +114,20 @@ body{
     right: 0;
     width: 0;
 	height: 0;
-	border-top: 155px solid transparent;
-	border-right: 266px solid #fdd2e8;
-	border-bottom: 155px solid transparent;
+	border-top: 140px solid transparent;
+	border-right: 251px solid #fdd2e8;
+	border-bottom: 140px solid transparent;
     z-index: 3;
 }
 .envelope__bottom {
     position: absolute;
-    bottom: 0;
+    top: 140px;
     left: 0;
     width: 0;
     height: 0;
-    border-left: 265px solid transparent;
-    border-bottom: 155px solid #ffb7dd;
-    border-right: 265px solid transparent;
+    border-left: 250px solid transparent;
+    border-bottom: 140px solid #ffb7dd;
+    border-right: 250px solid transparent;
     z-index: 3;
 }
 .envelope__top {
@@ -110,39 +136,138 @@ body{
     left: 0;
     width: 0;
     height: 0;
-    border-left: 265px solid transparent;
-    /* border-top: 155px solid #fd9ed0; */
-    border-top: 155px solid #ffb7dd;
-    border-right: 265px solid transparent;
+    border-left: 250px solid transparent;
+    border-top: 140px solid #ffb7dd;
+    border-right: 250px solid transparent;
     transform-origin: top;
-    /* z-index: 5; */
-    /* transition: transform 0.3s ease-in; */
-    /* transform: rotateX(90deg); */
 }
 .envelope__top--behind {
-    border-top: 155px solid #fd9ed0;
     z-index: 1;
     transform: rotateX(90deg);
     transition: transform 0.15s ease-in 0.25s;
-}
-.envelope:hover .envelope__top--behind {
-    transition: transform 0.15s ease-in 0.15s;
-    transform: rotateX(180deg);
 }
 .envelope__top--forward {
     z-index: 5;
     transform: rotateX(0deg);
     transition: transform 0.15s ease-in 0.40s;
 }
-.envelope:hover .envelope__top--forward {
-    transition: transform 0.15s ease-in;
-    transform: rotateX(90deg);
+@media (any-hover: hover) {
+    .envelope:hover .envelope__top--behind {
+        transition: transform 0.15s ease-in 0.15s;
+        transform: rotateX(180deg);
+    }
+    .envelope:hover .envelope__top--forward {
+        transition: transform 0.15s ease-in;
+        transform: rotateX(90deg);
+    }
+}
+@media (any-hover: none){
+    .envelope__top--behind {
+        transition: none;
+        animation: behind 5s ease-in 2s;
+    }
+    .envelope__top--forward {
+        transition: none;
+        animation: forward 5s ease-in 2s;
+    } 
+    @keyframes behind {
+        0%{
+            transform: rotateX(90deg);
+        }
+        3%{
+            transform: rotateX(90deg);
+        }
+        6%{
+            transform: rotateX(180deg);
+        }
+        94%{
+            transform: rotateX(180deg);
+        }
+        97%{
+            transform: rotateX(90deg);
+        }
+        100%{
+            transform: rotateX(90deg);
+        }
+    }
+    @keyframes forward {
+        0%{
+        transform: rotateX(0deg);
+        }
+        3%{
+            transform: rotateX(90deg);
+        }
+        97%{
+            transform: rotateX(90deg);
+        }
+        100%{
+        transform: rotateX(0deg);
+        }
+    }
 }
 .shadow {
-    width: 530px;
+    width: 500px;
     height: 20px;
     border-radius: 50%;
     /* background-color: #eed5e3; */
     background-color: rgba(238, 213, 227, 0.5);
     box-shadow: 0 0 20px #eed5e3;
+}
+@media (max-width: 800px) {
+    body{
+        font-size: clamp(16px, calc(16px + (8 + 8 * 0.7) * ((100vw - 320px) / 800)), 24px);
+    }
+    .envelope {
+        width: 62.5vw;
+        height: 35vw;
+        margin-bottom: 3.75vw;
+    }
+    .letter {
+        top: 1.875vw;
+        left: 1.875vw;
+        gap: 1.5vw;
+        width: 58.75vw;
+        height: 31.25vw;
+        border-radius: 1.875vw;
+    }
+    .text{
+        padding: 0 2vw;
+    }
+    .text p:not(:last-child){
+        margin-bottom: 1vw;
+    }
+    .text p:nth-child(2),
+    .text p:nth-child(3){
+        display: inline;
+        line-height: 140%;
+    }
+    .letter img{
+        width: 6.25vw;
+    }
+    .envelope__left {
+        border-top: 17.5vw solid transparent;
+        border-left: 32vw solid #fdd2e8;
+        border-bottom: 17.5vw solid transparent;
+    }
+    .envelope__right {
+        border-top: 17.5vw solid transparent;
+        border-right: 32vw solid #fdd2e8;
+        border-bottom: 17.5vw solid transparent;
+    }
+    .envelope__bottom {
+        top: 17vw;
+        border-left: 31.25vw solid transparent;
+        border-bottom: 18vw solid #ffb7dd;
+        border-right: 31.25vw solid transparent;
+    }
+    .envelope__top {
+        border-left: 31.25vw solid transparent;
+        border-top: 18vw solid #ffb7dd;
+        border-right: 31.25vw solid transparent;
+    }
+    .shadow {
+        width: 62.5vw;
+        height: 2.5vw;
+        box-shadow: 0 0 2.5vw #eed5e3;
+    }
 }
