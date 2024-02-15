@@ -93,7 +93,8 @@ body{
     width: 100%;
     height: 100%;
     /* contain потому что товар */
-    object-fit: contain;
+    /* object-fit: contain; */
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 .section-1__container .products__image{
@@ -113,42 +114,38 @@ body{
     line-height: 1.6;
     margin-bottom: 8px;
 }
-.products__links {
+.products__link--details {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
     font-weight: 800;
     line-height: 1.24;
     color: #F55529;
 }
-.products__links .products__link:first-child{
-    flex-grow: 1;
+.products__link--details span{
     overflow: hidden;
-}
-.products__links .products__link:first-child span{
     position: relative;
 }
-.products__links .products__link:first-child span:before{
+.products__link--details span::before{
     content: "";
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 0;
     height: 2px;
     background-color: #F55529;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
+    transition: width 0.3s ease;
 }
-.products__links .products__link:last-child{
-    flex: 0 0 24px;
+.products__link--details::after {
+    content: "";
+    background-color: #F55529;
+    background: 
+        url("../img/arrow-right.svg") center / 12px  no-repeat,
+        #F55529;
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: #F55529;
-    display: flex;
     transition: transform 0.3s ease;
-}
-.products__links .products__link:last-child img{
-    margin: auto;
 }
 /* ====================  section 2  ===================== */
 
@@ -192,12 +189,12 @@ body{
 .section-3 .products__title .products__link:before{
     content: "";
     position: absolute;
+    left: 0;
     bottom: 0;
-    width: 100%;
+    width: 0;
     height: 2px;
     background-color: #000;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
+    transition: width 0.3s ease;
 }
 .section-2__button {
     padding: 12px 43px;
@@ -317,17 +314,18 @@ body{
     .section-1 .products__title:hover{
         color: #F55529;
     }
-    .products__links .products__link:first-child:hover span:before{
-        transform: translateX(0);
+    .products__link--details:hover span::before{
+        width: 100%;
     }
-    .products__links .products__link:last-child:hover{
+    .products__link--details:hover::after{
         transform: scale(1.1);
     }
     .products__image:hover{
         transform: scale(1.03);
     }
     .products__title:hover .products__link:before{
-        transform: translateX(0);
+        /* transform: translateX(0); */
+        width: 100%;
     }
     .section-3__list .list__item:hover a{
         text-decoration: underline;
