@@ -367,6 +367,7 @@ body{
     font-family: "Cormorant Infant", serif;
     color: #fff;
     font-weight: 600;
+    position: relative;
 }
 .hero::before{
     content: "";
@@ -389,6 +390,7 @@ body{
     transform: rotate(-82.6deg);
 }
 .background{
+    /* max-height: 766px; */
 }
 .background__image {
     position: absolute;
